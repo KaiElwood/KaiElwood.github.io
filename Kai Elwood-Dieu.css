@@ -2,3 +2,37 @@
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  position: relative;
+}
+
+.name1 {
+  animation-name: name1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.name3 {
+  animation-name: name3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes name1 {
+  0% {
+
+  }
+  100% {
+
+  }
+}
+
+@keyframes name3 {
+  0% {
+
+  }
+  100% {
+
+  }
+}
