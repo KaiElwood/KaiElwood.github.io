@@ -4,30 +4,60 @@
 }
 
 h1 {
-  position: relative;
   font-family: 'Monoton', cursive;
-  font-size: 3rem;
+  font-size: 8rem;
   font-weight: 400;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-.name1 {
+.names {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+ .name1 {
+  position: relative;
+  padding-left: 5%;
+  /* left: 5%; */
   animation-name: name1;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
+  float: left;
+}
+
+.name2 {
+ position: relative;
+ left: -15%;
+ top: 8%;
+ float: left;
+ /* left: 12%;
+ top: -50%; */
 }
 
 .name3 {
+  position: relative;
+  left: -30%;
+  top: 16%;
   animation-name: name3;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
+  float: left;
 }
 
-@keyframes name1 {
+/* @keyframes name1 {
   0% {
-
+    left: 0%;
+    top: 0%;
+  }
+  50% {
+    left: 100%;
+    top: 100%;
   }
   100% {
-
+    left: 0%;
+    top: 0%;
   }
 }
 
@@ -38,4 +68,4 @@ h1 {
   100% {
 
   }
-}
+} */
