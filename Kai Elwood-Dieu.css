@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
 h2 {
   font-family: 'Monoton', cursive;
   font-size: 8rem;
@@ -20,6 +27,8 @@ h2 {
  .name1 {
   position: absolute;
   left: 60px;
+  color: #294936;
+  /* text-shadow: 5px 5px rgba(255, 255, 255, 0.5); */
   /* animation-name: name1;
   animation-duration: 4s;
   animation-iteration-count: 2; */
@@ -30,6 +39,8 @@ h2 {
  position: absolute;
  left: 80px;
  top: 20px;
+ color: #5b8266;
+ /* text-shadow: 5px 5px rgba(255, 255, 255, 0.5); */
  /* float: left; */
 }
 
@@ -37,6 +48,9 @@ h2 {
   position: absolute;
   left: 100px;
   top: 40px;
+  color: #aef6c7;
+  text-decoration: underline;
+  /* text-shadow: 5px 5px rgba(255, 255, 255, 0.5); */
   /* float: left; */
 }
 
@@ -90,22 +104,28 @@ h3 {
 } */
 
 a {
-  color: black;
   font-style: normal;
   text-decoration: none;
-  font-size: 3rem;
-  font-family: 'Titillium Web', sans-serif;
+  font-size: 2rem;
+  font-family: 'Geo', sans-serif;
+  color: white;
   /* text-align: center; */
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .verticalNav {
   position: relative;
-  width: 30%;
-  top: 40vh;
+  width: 100%;
+  top: 90vh;
+  left:60vw;
 }
 
 .verticalNav li {
   display: block;
+  float: left;
   text-align: center;
-  padding-bottom: 5%;
+  padding-right: 10%;
 }
