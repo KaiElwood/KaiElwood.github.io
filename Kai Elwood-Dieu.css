@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-h1 {
+h2 {
   font-family: 'Monoton', cursive;
   font-size: 8rem;
   font-weight: 400;
@@ -12,60 +12,93 @@ h1 {
 }
 
 .names {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
+  position: fixed;
+  width: 300px;
+  height: 300px;
 }
 
  .name1 {
-  position: relative;
-  padding-left: 5%;
-  /* left: 5%; */
-  animation-name: name1;
+  position: absolute;
+  left: 60px;
+  /* animation-name: name1;
   animation-duration: 4s;
-  animation-iteration-count: 2;
-  float: left;
+  animation-iteration-count: 2; */
+  /* float: left; */
 }
 
 .name2 {
- position: relative;
- left: -15%;
- top: 8%;
- float: left;
- /* left: 12%;
- top: -50%; */
+ position: absolute;
+ left: 80px;
+ top: 20px;
+ /* float: left; */
 }
 
 .name3 {
-  position: relative;
-  left: -30%;
-  top: 16%;
-  animation-name: name3;
-  animation-duration: 4s;
-  animation-iteration-count: 2;
-  float: left;
+  position: absolute;
+  left: 100px;
+  top: 40px;
+  /* float: left; */
 }
 
-/* @keyframes name1 {
+/* .name2:hover {
+  animation-name: name2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.name3:hover {
+  animation-name: name3;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+} */
+
+/* @keyframes name2 {
   0% {
-    left: 0%;
-    top: 0%;
+    left: -170px;
+    top: 20px;
   }
   50% {
-    left: 100%;
-    top: 100%;
+    left: -70px;
+    top: 40px;
   }
   100% {
-    left: 0%;
-    top: 0%;
+    left: -170px;
+    top: 20px;
   }
 }
 
 @keyframes name3 {
   0% {
-
+    left: -405px;
+    top: 40px;
+  }
+  50% {
+    left: -302px;
+    top: 80px;
   }
   100% {
-
+    left: -405px;
+    top: 40px;
   }
 } */
+
+a {
+  color: black;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: 'Titillium Web', sans-serif;
+  /* text-align: center; */
+}
+
+.verticalNav {
+  position: relative;
+  width: 30%;
+  top: 40vh;
+}
+
+.verticalNav li {
+  display: block;
+  text-align: center;
+  padding-bottom: 5%;
+}
