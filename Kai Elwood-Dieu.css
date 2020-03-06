@@ -118,13 +118,20 @@ a:hover {
 
 .verticalNav {
   position: relative;
-  width: 100%;
+  width: 40vw;
   top: 90vh;
   left:60vw;
+
+}
+
+.verticalNav ul {
+  display: flex;
+  justify-content: center;
 }
 
 .verticalNav li {
   display: block;
+  list-style-type: none;
   float: left;
   text-align: center;
   padding-right: 10%;
