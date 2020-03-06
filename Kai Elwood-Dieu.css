@@ -40,6 +40,13 @@ h2 {
   /* float: left; */
 }
 
+h3 {
+  position: absolute;
+  font-size: 2rem;
+  font-family: 'Monoton', cursive;
+  font-weight: 400;
+}
+
 /* .name2:hover {
   animation-name: name2;
   animation-duration: 4s;
