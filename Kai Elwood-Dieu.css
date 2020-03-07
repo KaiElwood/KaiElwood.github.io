@@ -146,6 +146,12 @@ a:hover {
 }
 
 @media only screen and (max-device-width: 420px) {
+  .names {
+    position: fixed;
+    top: 5vh;
+    width: 300px;
+    height: 300px;
+  }
   h2 {
     font-family: 'Monoton', cursive;
     font-size: 10vw;
