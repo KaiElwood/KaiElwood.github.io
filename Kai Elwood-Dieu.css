@@ -4,8 +4,8 @@
 }
 
 :root {
-  --neon-text-color: #f40;
-  --neon-border-color: green;
+  --neon-text-color: white;
+  --neon-border-color: rgba(0,128,0,.7);
 }
 
 .background {
@@ -31,7 +31,7 @@ h2 {
   height: 95vh;
   border: 3px solid green;
   background-color: rgba(0, 0, 0, 1);
-  animation: flicker 1.5s infinite alternate;
+  animation: flickerbox 1.5s infinite alternate;
 }
 
 .names {
@@ -77,9 +77,9 @@ h3 {
   font-weight: 400;
 }
 
-@keyframes flicker {
+@keyframes flickerbox {
 0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-box-shadow:
+  box-shadow:
             0 0 .5rem #fff,
             inset 0 0 .5rem #fff,
             0 0 2rem var(--neon-border-color),
@@ -89,10 +89,26 @@ box-shadow:
     }
 
     20%, 24%, 55% {
-        text-shadow: none;
         box-shadow: none;
     }
   }
+
+  @keyframes flickertext {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+                -0.2rem -0.2rem 1rem #fff,
+                0.2rem 0.2rem 1rem #fff,
+                0 0 2rem var(--neon-text-color),
+                0 0 4rem var(--neon-text-color),
+                0 0 6rem var(--neon-text-color),
+                0 0 8rem var(--neon-text-color),
+                0 0 10rem var(--neon-text-color);
+      }
+
+      20%, 24%, 55% {
+          text-shadow: none;
+      }
+    }
 
 a {
   font-style: normal;
@@ -100,11 +116,12 @@ a {
   font-size: 2rem;
   font-family: 'Geo', sans-serif;
   color: white;
-  /* text-align: center; */
+  border: none;
 }
 
 a:hover {
   text-decoration: underline;
+  animation: flickertext 1.5s infinite alternate;
 }
 
 .verticalNav {
