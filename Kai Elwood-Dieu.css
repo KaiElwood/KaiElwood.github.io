@@ -5,7 +5,7 @@
 
 :root {
   --neon-text-color: white;
-  --neon-border-color: rgba(0,128,0,.7);
+  --neon-border-color: rgba(188, 57, 16, .2);
 }
 
 .background {
@@ -29,9 +29,9 @@ h2 {
   left: 2.5vw;
   width: 95vw;
   height: 95vh;
-  border: 3px solid green;
+  border: 3px double #D7E8BA;
   background-color: rgba(0, 0, 0, 1);
-  animation: flickerbox 1.5s infinite alternate;
+  /* animation: flickerbox 1.5s infinite alternate; */
 }
 
 .names {
@@ -43,7 +43,7 @@ h2 {
  .name1 {
   position: absolute;
   left: 60px;
-  color: #294936;
+  color: #BC3910;
   /* text-shadow: 5px 5px rgba(255, 255, 255, 0.5); */
   /* animation-name: name1;
   animation-duration: 4s;
@@ -55,7 +55,7 @@ h2 {
  position: absolute;
  left: 80px;
  top: 20px;
- color: #5b8266;
+ color: #F49E4C;
  /* text-shadow: 5px 5px rgba(255, 255, 255, 0.5); */
  /* float: left; */
 }
@@ -64,7 +64,7 @@ h2 {
   position: absolute;
   left: 100px;
   top: 40px;
-  color: #aef6c7;
+  color: #D7E8BA;
   text-decoration: underline;
   /* text-shadow: 5px 5px rgba(255, 255, 255, 0.5); */
   /* float: left; */
@@ -80,8 +80,8 @@ h3 {
 @keyframes flickerbox {
 0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
   box-shadow:
-            0 0 .5rem #fff,
-            inset 0 0 .5rem #fff,
+            0 0 .5rem rgba(255, 255, 255, .5),
+            inset 0 0 .5rem rgba(255, 255, 255, .5),
             0 0 2rem var(--neon-border-color),
             inset 0 0 2rem var(--neon-border-color),
             0 0 4rem var(--neon-border-color),
@@ -115,7 +115,7 @@ a {
   text-decoration: none;
   font-size: 2rem;
   font-family: 'Geo', sans-serif;
-  color: white;
+  color: #D7E8BA;
   border: none;
 }
 
