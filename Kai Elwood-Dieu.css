@@ -17,7 +17,7 @@
 
 h2 {
   font-family: 'Monoton', cursive;
-  font-size: 8rem;
+  font-size: 10vw;
   font-weight: 400;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -143,4 +143,24 @@ a:hover {
   float: left;
   text-align: center;
   padding-right: 10%;
+}
+
+@(max-device-width: 845px) {
+  h2 {
+    font-family: 'Monoton', cursive;
+    font-size: 15vw;
+    font-weight: 400;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+
+@media only screen and (max-device-width: 845px) {
+  h2 {
+    font-family: 'Monoton', cursive;
+    font-size: 15vw;
+    font-weight: 400;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
 }
