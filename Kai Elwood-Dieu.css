@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+:root {
+  --neon-text-color: #f40;
+  --neon-border-color: green;
+}
+
 .background {
   position: fixed;
   width: 100vw;
@@ -16,6 +21,17 @@ h2 {
   font-weight: 400;
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.border {
+  position: fixed;
+  top: 2.5vh;
+  left: 2.5vw;
+  width: 95vw;
+  height: 95vh;
+  border: 3px solid green;
+  background-color: rgba(0, 0, 0, 1);
+  animation: flicker 1.5s infinite alternate;
 }
 
 .names {
@@ -61,47 +77,22 @@ h3 {
   font-weight: 400;
 }
 
-/* .name2:hover {
-  animation-name: name2;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-}
+@keyframes flicker {
+0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);
+    }
 
-.name3:hover {
-  animation-name: name3;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-} */
-
-/* @keyframes name2 {
-  0% {
-    left: -170px;
-    top: 20px;
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
   }
-  50% {
-    left: -70px;
-    top: 40px;
-  }
-  100% {
-    left: -170px;
-    top: 20px;
-  }
-}
-
-@keyframes name3 {
-  0% {
-    left: -405px;
-    top: 40px;
-  }
-  50% {
-    left: -302px;
-    top: 80px;
-  }
-  100% {
-    left: -405px;
-    top: 40px;
-  }
-} */
 
 a {
   font-style: normal;
