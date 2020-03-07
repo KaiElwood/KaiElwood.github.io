@@ -134,7 +134,8 @@ a:hover {
 
 .verticalNav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-right: 5vw;
 }
 
 .verticalNav li {
@@ -142,25 +143,25 @@ a:hover {
   list-style-type: none;
   float: left;
   text-align: center;
-  padding-right: 10%;
 }
 
-@(max-device-width: 845px) {
+@media only screen and (max-device-width: 420px) {
   h2 {
     font-family: 'Monoton', cursive;
-    font-size: 15vw;
+    font-size: 10vw;
     font-weight: 400;
     margin-block-start: 0;
     margin-block-end: 0;
   }
-}
-
-@media only screen and (max-device-width: 845px) {
-  h2 {
-    font-family: 'Monoton', cursive;
-    font-size: 15vw;
-    font-weight: 400;
-    margin-block-start: 0;
-    margin-block-end: 0;
+  .verticalNav {
+    position: relative;
+    width: 90vw;
+    top: 90vh;
+    left: 5vw;
+  }
+  .verticalNav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
   }
 }
