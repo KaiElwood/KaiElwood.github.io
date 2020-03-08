@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 6vw;
+  font-weight: 400;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #D7E8BA;
+}
+
+.works {
+  width: 100vw;
+  text-align: center;
+}
+
+.mainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20vh;
+  width: 100vw;
+  font-family: 'Geo', sans-serif;
+}
+
+#Markov {
+  object-fit: cover;
+  object-position: center;
+  width: 250px;
+  height: auto;
+  border: 0 solid black;
+  border-radius: 10px;
+}
+
+.card {
+  width: 250px;
+  height: 500px;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+#k1 {
+  position: relative;
+  color: #BC3910;
+}
+
+#k2 {
+  position: absolute;
+  top: 40px;
+  left: 42%;
+  color: #F49E4C;
+}
+
+#k3 {
+  position: absolute;
+  top: 80px;
+  text-align: center;
+  left: 45%;
+  color: #D7E8BA;
+}

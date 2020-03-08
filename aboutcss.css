@@ -18,6 +18,10 @@ body {
   text-align: center;
 }
 
+a {
+  color: white;
+}
+
 h1 {
   font-family: 'Monoton', cursive;
   font-size: 6vw;
