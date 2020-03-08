@@ -1,3 +1,9 @@
+if (document.documentElement.clientWidth <= 420) {
+ console.log ("hello");
+}
+
+
+if (document.documentElement.clientWidth > 420) {
 $(".names").hover(function () {
   $(".name2").animate({
     left: "150px",
@@ -17,3 +23,4 @@ $(".names").hover(function () {
     top: "40px"
   });
 });
+}
