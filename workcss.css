@@ -42,9 +42,26 @@ h1 {
 }
 
 .card {
-  width: 250px;
+  width: 40vw;
+  padding: 1vw;
+  margin: 1vw;
   height: 40vh;
   text-align: center;
+  border: 1px solid #D7E8BA;
+  border-radius: 50%;
+}
+
+.postImage {
+  transition: all .5s ease-in-out;
+  border: 0 solid black;
+  border-radius: 10px;
+}
+
+.postImage:hover {
+  transform: scale(1.2);
+  padding: 2rem;
+  border: 0 solid black;
+  border-radius: 10px;
 }
 
 a {

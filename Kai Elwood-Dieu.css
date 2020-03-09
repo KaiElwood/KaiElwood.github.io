@@ -65,7 +65,7 @@ h2 {
   left: 100px;
   top: 40px;
   color: #D7E8BA;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   /* text-shadow: 5px 5px rgba(255, 255, 255, 0.5); */
   /* float: left; */
 }
