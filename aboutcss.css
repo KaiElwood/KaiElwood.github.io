@@ -320,3 +320,18 @@ p {
 .menu-wrap .menu >div > div >ul>li>a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (max-device-width: 820px) {
+  p {
+    font-size: 4vh;
+  }
+
+  #text {
+    width: 80vw;
+  }
+  #picture img {
+    width:60vw;
+    margin-top: 5vh;
+  }
+
+}
