@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MC.css">
+    <title>Markov Chain Music</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+<!-- Menu -->
+    <div class="menu-wrap rotate-in-center">
+      <input id="menucheck" type="checkbox" name="menu" value="">
+      <div class="lines"><div></div></div>
+      <div class="menu">
+        <div class="">
+          <div class="">
+            <ul>
+              <li><a href="/../index.html">Home</a></li>
+              <li><a href="https://song.link/us/i/1500042394">Music</a></li>
+              <li><a href="/../KaiAbout.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Title -->
+    <div class="works">
+      <h1 class="slide-in-left" id="k1">Markov Chain Interactive Music Experience</h1>
+      <h1 class="slide-in-left" id="k2">Markov Chain Interactive Music Experience</h1>
+      <h1 class="slide-in-left" id="k3">Markov Chain Interactive Music Experience</h1>
+    </div>
+    <div class="mainDiv">
+
+<!-- Image div -->
+      <div id="post1" class="img">
+        <a href="https://editor.p5js.org/KaiFinney/sketches/7g3uiwEw"><img class="postImage" id="Markov" src="/../MarkovChainScreenshot.png" alt=""></a>
+      </div>
+
+<!-- Main Text Explanation Div -->
+      <div id="post3" class="text">
+        <!-- <h2>Jazzy Musical Markov Chain!</h2> -->
+        <h3 class="caption">Overview:</h3>
+        <p class="bodytext">For this project, I wanted to make a very basic instrument that would play different chords depending on where your mouse was on the screen. I envisioned it as a method to bring an interactive aspect to a music artist's website, or a tool to come up with basic chord progressions. </p>
+
+        <h3 class="caption">Goals:</h3>
+        <p class="bodytext">Inspire users to make different chord progressions based on their own explorations within the musical framework provided. </p>
+
+        <h3 class="caption">Design Choices and Interface:</h3>
+        <p class="bodytext">I tried to accomplish my goal by creating different squares without explicitly explaining which square represented which chord, in order for the user to explore.
+        In addition, I chose to use chords instead of drums because I wanted to give the user more melodic freedom beyond what purely drums would allow. The sounds were created in Logic Pro X, with a little verb added via Vahalla (Vintage Verb).
+        </p>
+        <p class="bodytext">
+        The code works by playing a different Markov chain on each 4th of the provided screen. Hover over different parts of the screen to try it!
+        </p>
+
+        <h3 class="caption">Future Revision/Opportunities to Improve:</h3>
+        <p class="bodytext">Ideally, I wanted this to be the background to a website. However, when I tried to implement it into an HTML file, I ran into trouble due to Chrome not allowing my computer to create sound. In the future I’d like to learn how to successfully put a p5 file into an HTML document in order to give users the full experience I desired. In addition, I’d like to add other sounds such as a base and drums in order to allow the user to create a loop and add additional sounds.</p>
+      </div>
+    </div>
+
+  </body>
+</html>
