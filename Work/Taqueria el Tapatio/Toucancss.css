@@ -1,0 +1,196 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.centernav {
+  width: 80%;
+  margin: auto;
+}
+
+.topNav {
+  width: 100%;
+  padding: 20px 0;
+  background: #F96D2D;
+  position: fixed;
+  z-index: 3;
+  margin: 0;
+  display: inline-block;
+}
+
+.span1 {
+  float: left;
+  display: inline-block;
+  width: 19.9%;
+  padding: 0;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.span1 .logo {
+  margin-top: 24px;
+  /* border: 2px solid #d8a800; */
+  border-radius: 10px;
+
+}
+
+.logoWords {
+  border: 5px solid;
+  padding-right: 4px;
+  /* border-radius: 10px; */
+}
+
+.span1 a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(249, 211, 45);
+}
+
+.background1 {
+  background-image: url(Wall1.jpg);
+  /* padding-top: 123px; */
+  /* padding-left: 25%; */
+  height: 100vh;
+  /* width: 80%; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: lighter;
+}
+
+.mainwords {
+  font-family: 'Kaushan Script', cursive;
+  text-align: right;
+  vertical-align: middle;
+  /* color: rgb(249, 211, 45); */
+  background-color: rgba(249, 211, 45, 1);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  /* background-color: rgba(183, 237, 235,1); */
+  /* padding-right: 20px; */
+  font-size: 5rem;
+  z-index: 1;
+  position: absolute;
+  /* top: 123px; */
+  width: 360px;
+  height: 100vh;
+  /* text-align: left; */
+}
+
+.mainwords .allWords {
+  padding-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 45%;
+}
+
+.mainwords hr {
+  border: rgba(183, 237, 235,1) solid 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.secondPage {
+  z-index: 2;
+  background-color: #e7e7e7;
+  display: block;
+}
+
+.Hola {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 80px 0;
+}
+
+.Hola .welcome {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5rem;
+  /* border-bottom: 10px solid #F96D2D; */
+}
+
+.Hola .welcomeText {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 2rem;
+}
+
+p.welcomeText {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 20px;
+}
+
+section.thirdPage {
+  background-image: url(SunChair.JPG);
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  height: 100vh;
+  z-index: 4;
+  margin: 0;
+}
+
+.bottomNav {
+  width: 100%;
+  background-color: #F96D2D;
+  z-index: 3;
+  margin: 0;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+
+.span3 {
+  float: left;
+  display: inline-block;
+  width: 19.9%;
+  padding: 0;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.span3 a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(249, 211, 45);
+}
+
+/* .wordsBg {
+  text-decoration: underline;
+  text-decoration-color: rgba(183, 237, 235,1);
+} */
+
+/* .toucan {
+  width: 40px;
+} */
+
+/* .span1 img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+
+} */
