@@ -19,6 +19,11 @@ h1 {
   color: #D7E8BA;
 }
 
+a {
+  color: white;
+  font-family: 'Geo', sans-serif;
+}
+
 
 /* title container */
 .works {
@@ -60,20 +65,20 @@ h1 {
 
 .text {
   width: 70vw;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 .caption {
   text-align: left;
-  font-size: 3rem;
+  font-size: 4vw;
   color: #D7E8BA;
   position: relative;
   left: -5vw;
-  line-height: 7rem;
+  line-height: 7vw;
 }
 
 .bodytext {
-  line-height: 3.5rem;
+  line-height: 5vw;
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
