@@ -4,6 +4,10 @@
   font-family: 'Dosis', 'Sans Serif';
 }
 
+text {
+  font-size: 16px;
+}
+
 :root {
   --neon-text-color: white;
   --neon-border-color: rgba(188, 57, 16, .2);
@@ -334,6 +338,13 @@ h3 + p {
 
 .section2 {
   padding: 200px;
+  text-align: center;
+  align-items: center;
+}
+
+.longer-text {
+  width: 75%;
+  margin: auto;
 }
 
 .projectcontainer {
@@ -349,6 +360,7 @@ h3 + p {
   /* background: #EDE7F6; */
   /* padding: 1.5rem; */
   border-radius: 1rem;
+  text-align: center;
 }
 
 .imgwrap {
@@ -368,7 +380,7 @@ h3 + p {
   object-fit: cover;
   object-position: top;
   width: 100%;
-  height: 300px;
+  height: 700px;
   min-height: 300px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -378,13 +390,76 @@ h3 + p {
   font-weight: 400;
 }
 
-.blackline {
+figure {
+  display: flex;
+  width: 100%;
+  max-height: 10px;
+}
+
+figure img {
+  width: 75%;
+  object-fit: cover;
+}
+
+.line-right {
+  flex-direction: row-reverse;
+  padding: 5px 0;
+}
+
+.embedcontainer {
+  overflow: hidden;
+  padding-top: 1100px;
+  /* max-height: 500px; */
   position: relative;
-  /* : right; */
-  /* left: 30%; */
+}
+
+.card {
+  transition: all ease-in-out .5s;
+}
+
+.card:hover{
+  /* box-shadow: -8px 10px 5px 0px rgba(255,255,255,1); */
+  transform: scale(1.05);
+}
+.imgcontainer > a > img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  min-height: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.section2 > div > .resume {
+  position: absolute;
+  border: none;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  /* object-fit: cover; */
+}
+
+.padding-top{
+  padding-top: 200px;
+}
+
+/* .line-left {
+  flex-direction: row;
+} */
+
+/* .line {
+  position: relative;
   max-width: 100%;
   min-width: 300px;
-}
+} */
+
+/* .blackline {
+  display: inline-block;
+} */
 
 #one.slide-in-left {
 	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .2s both;
@@ -483,6 +558,8 @@ h3 + p {
     left: 49%
   }
 }
+
+
 
 
 
