@@ -1,6 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Dosis', 'Sans Serif';
+  scroll-behavior: smooth;
+  font-size: 16px;
+  /* transition: all ease-in-out 5s; */
 }
 
 :root {
@@ -9,47 +13,42 @@
 }
 
 .background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-color: black;
 }
 
 h2 {
   font-family: 'Monoton', cursive;
-  font-size: 10vw;
+  font-size: 7rem;
   font-weight: 400;
   margin-block-start: 0;
   margin-block-end: 0;
+  color: white;
 }
 
-.border {
-  position: fixed;
-  top: 2.5vh;
-  left: 2.5vw;
-  /* width: 95vw;
-  height: 95vh; */
-  border: 3px double #D7E8BA;
-  background-color: rgba(0, 0, 0, 1);
-  /* animation: flickerbox 1.5s infinite alternate; */
-  animation: changeheight .8s linear both;
+h3 {
+  font-size: 4rem;
+  font-weight: 500;
 }
 
-@keyframes changeheight {
-  0% {
-    width: 0;
-    height: 0;
-  }
-  100% {
-    width: 95vw;
-    height: 95vh;
-  }
+h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .names {
-  position: fixed;
+  vertical-align: middle;
+  position: relative;
+  /* top: 25%; */
   width: 300px;
-  height: 300px;
+  height: 100vh;
+  left: 10%;
+}
+
+p {
+  font-size: 2rem;
 }
 
 .flicker-in-1 {
@@ -252,29 +251,8 @@ h2 {
 
  .name1 {
   position: absolute;
-  left: 60px;
-  color: #BC3910;
-}
-
-.name2 {
- position: absolute;
- left: 80px;
- top: 20px;
- color: #F49E4C;
-}
-
-.name3 {
-  position: absolute;
-  left: 100px;
-  top: 40px;
-  color: #D7E8BA;
-}
-
-h3 {
-  position: absolute;
-  font-size: 2rem;
-  font-family: 'Monoton', cursive;
-  font-weight: 400;
+  top: 50%;
+  transform: translate(0, -60%);
 }
 
 @keyframes flickerbox {
@@ -312,52 +290,179 @@ h3 {
 
 a {
   font-style: normal;
-  text-decoration: none;
   font-size: 2rem;
-  font-family: 'Geo', sans-serif;
-  color: #D7E8BA;
+}
+
+.toplinks {
+  color: white;
+  text-decoration: none;
   border: none;
 }
 
-a:hover {
+ul li:nth-child(3) .toplinks{
+  color: #bc3910;
+  position: absolute;
+  left: 20px;
+}
+
+ul li:nth-child(2){
+  padding-left: 200px;
+  left: 100px;
+}
+
+.descriptors {
+  line-height: 200px;
+}
+
+/* a:hover {
   text-decoration: underline;
   animation: flickertext 1.5s infinite alternate;
+} */
+
+img.arrow{
+  position: absolute;
+  top: 90vh;
+  left: 49%;
+  animation: bounce 2s ease-in-out 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 90%{transform: translateY(0);}
+  30%, 50%{transform: translateY(30px);}
+  40% {transform: translateY(25px);}
 }
 
 .verticalNav {
-  position: relative;
-  width: 40vw;
-  top: 90vh;
+  position: absolute;
+  top: 40vh;
   left:60vw;
-
 }
 
-.verticalNav ul {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 5vw;
+/* h3 + p {
+  float: right;
+} */
+
+.section2 {
+  padding: 200px;
+  text-align: center;
+  align-items: center;
 }
 
-.verticalNav li {
-  display: block;
-  list-style-type: none;
-  float: left;
+.longer-text {
+  width: 75%;
+  margin: auto;
+}
+
+.projectcontainer {
+  padding: 0 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+  /* This is better for small screens, once min() is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  /* grid-gap: 1rem; */
+}
+
+.projectcontainer > div {
+  /* background: #EDE7F6; */
+  /* padding: 1.5rem; */
+  border-radius: 1rem;
   text-align: center;
 }
 
+.imgwrap {
+  padding: 70px 0;
+}
+
+/* .section2 h3 > a{
+  font-size: 2rem;
+  margin-left: 15vw;
+  font-weight: 400;
+} */
+
+.section2 > div > img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 700px;
+  min-height: 300px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.captionbig {
+  padding-left: 25vw;
+  font-weight: 400;
+}
+
+figure {
+  display: flex;
+  width: 100%;
+  max-height: 10px;
+}
+
+figure img {
+  width: 75%;
+  object-fit: cover;
+}
+
+.line-right {
+  flex-direction: row-reverse;
+  padding: 5px 0;
+}
+
+.embedcontainer {
+  overflow: hidden;
+  padding-top: 1100px;
+  position: relative;
+}
+
+.card {
+  transition: all ease-in-out .5s;
+  margin: 30px;
+  margin-top: auto;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.imgcontainer > a > img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.section2 > div > .resume {
+  position: absolute;
+  border: none;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  /* object-fit: cover; */
+}
+
+.padding-top{
+  padding-top: 200px;
+}
+
 #one.slide-in-left {
-	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
-	        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .2s both;
+	        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .2s both;
 }
 
 #two.slide-in-left {
-	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
-	        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s both;
+	        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s both;
 }
 
 #three.slide-in-left {
-	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
-	        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
+	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
+	        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
 }
 
 @-webkit-keyframes slide-in-left {
@@ -385,37 +490,148 @@ a:hover {
   }
 }
 
-@media only screen and (max-device-width: 420px) {
+@media only screen and (max-width: 1550px) {
   .names {
-    position: fixed;
-    top: 5vh;
+    position: relative;
+    /* top: 25%; */
     width: 300px;
-    height: 300px;
+    height: 100vh;
+    left: 10%;
   }
-  a {
-    font-style: normal;
-    /* text-decoration: none; */
-    font-size: 2rem;
-    /* font-family: 'Geo', sans-serif; */
-    color: #D7E8BA;
-    border: none;
+
+  .section2 {
+    padding: 100px;
   }
+
+  * {
+    font-size: 12px;
+  }
+
+  .name1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -60%);
+  }
+
   h2 {
     font-family: 'Monoton', cursive;
-    font-size: 10vw;
+    font-size: 100px;
     font-weight: 400;
     margin-block-start: 0;
     margin-block-end: 0;
   }
   .verticalNav {
-    position: relative;
-    width: 90vw;
-    top: 90vh;
-    left: 5vw;
+    position: absolute;
+    top: 60vh;
+    left:60vw;
   }
-  .verticalNav ul {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 0;
+  ul li:nth-child(3){
+    color: #bc3910;
+    position: absolute;
+    left: 40px;
+  }
+  
+  ul li:nth-child(2){
+    padding-left: 150px;
+  }
+  
+  .descriptors {
+    font-style: normal;
+    /* text-decoration: none; */
+    font-size: 1.8rem;
+    font-family: 'Dosis', sans-serif;
+    border: none;
+    color: white;
+    display: block;
+    list-style-type: none;
+    /* float: left; */
+    /* text-align: center; */
+    line-height: 100px;
+  }
+
+  img.arrow{
+    position: absolute;
+    width: 25px;
+    top: 90vh;
+    left: 49%
+  }
+}
+
+
+
+@media only screen and (max-width: 630px) {
+  * {
+    font-size: 10px;
+  }
+
+  .projectcontainer {
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  }
+
+  .names {
+    position: relative;
+    /* top: 25%; */
+    width: 300px;
+    height: 100vh;
+    left: 30%;
+    transform: translate(-20%, 0);
+  }
+
+  .embedcontainer {
+    padding-top: 100%;
+  }
+
+  .section2 {
+    padding: 50px;
+  }
+
+  .name1 {
+    position: absolute;
+    top: 30%;
+    transform: translate(0, -60%);
+  }
+
+  h2 {
+    font-family: 'Monoton', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .verticalNav {
+    position: absolute;
+    top: 50vh;
+    left:20vw;
+  }
+  ul li:nth-child(3){
+    color: #bc3910;
+    position: absolute;
+    left: 20px;
+  }
+  
+  ul li:nth-child(2){
+    padding-left: 100px;
+  }
+  
+  .descriptors {
+    font-style: normal;
+    /* text-decoration: none; */
+    font-size: 1.5rem;
+    font-family: 'Dosis', sans-serif;
+    border: none;
+    color: white;
+    display: block;
+    list-style-type: none;
+    /* float: left; */
+    /* text-align: center; */
+    line-height: 80px;
+  }
+
+  img.arrow{
+    position: absolute;
+    width: 25px;
+    top: 90vh;
+    left: 47.5%
   }
 }
