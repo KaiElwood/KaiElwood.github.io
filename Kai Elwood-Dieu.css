@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
   font-family: 'Dosis', 'Sans Serif';
-}
-
-text {
+  scroll-behavior: smooth;
   font-size: 16px;
+  /* transition: all ease-in-out 5s; */
 }
 
 :root {
@@ -22,7 +21,7 @@ text {
 
 h2 {
   font-family: 'Monoton', cursive;
-  font-size: 130px;
+  font-size: 7rem;
   font-weight: 400;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -30,8 +29,13 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 500;
+}
+
+h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .names {
@@ -286,14 +290,16 @@ p {
 
 a {
   font-style: normal;
-  text-decoration: none;
   font-size: 2rem;
-  font-family: 'Geo', sans-serif;
-  color: #BC3910;
+}
+
+.toplinks {
+  color: white;
+  text-decoration: none;
   border: none;
 }
 
-ul li:nth-child(3){
+ul li:nth-child(3) .toplinks{
   color: #bc3910;
   position: absolute;
   left: 20px;
@@ -305,25 +311,25 @@ ul li:nth-child(2){
 }
 
 .descriptors {
-  font-style: normal;
-  font-size: 2rem;
-  font-family: 'Dosis', sans-serif;
-  border: none;
-  color: white;
-  display: block;
-  list-style-type: none;
   line-height: 200px;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
   animation: flickertext 1.5s infinite alternate;
-}
+} */
 
 img.arrow{
   position: absolute;
   top: 90vh;
   left: 49%;
+  animation: bounce 2s ease-in-out 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 90%{transform: translateY(0);}
+  30%, 50%{transform: translateY(30px);}
+  40% {transform: translateY(25px);}
 }
 
 .verticalNav {
@@ -332,9 +338,9 @@ img.arrow{
   left:60vw;
 }
 
-h3 + p {
+/* h3 + p {
   float: right;
-}
+} */
 
 .section2 {
   padding: 200px;
@@ -350,10 +356,10 @@ h3 + p {
 .projectcontainer {
   padding: 0 60px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
   /* This is better for small screens, once min() is better supported */
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-  grid-gap: 1rem;
+  /* grid-gap: 1rem; */
 }
 
 .projectcontainer > div {
@@ -367,11 +373,11 @@ h3 + p {
   padding: 70px 0;
 }
 
-.section2 h3 > a{
-  font-size: 20px;
+/* .section2 h3 > a{
+  font-size: 2rem;
   margin-left: 15vw;
   font-weight: 400;
-}
+} */
 
 .section2 > div > img {
   position: relative;
@@ -409,26 +415,23 @@ figure img {
 .embedcontainer {
   overflow: hidden;
   padding-top: 1100px;
-  /* max-height: 500px; */
   position: relative;
 }
 
 .card {
   transition: all ease-in-out .5s;
+  margin: 30px;
+  margin-top: auto;
 }
 
 .card:hover{
-  /* box-shadow: -8px 10px 5px 0px rgba(255,255,255,1); */
   transform: scale(1.05);
 }
+
 .imgcontainer > a > img {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
   object-fit: cover;
-  object-position: bottom;
   width: 100%;
-  min-height: 100px;
+  height: 400px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -446,20 +449,6 @@ figure img {
 .padding-top{
   padding-top: 200px;
 }
-
-/* .line-left {
-  flex-direction: row;
-} */
-
-/* .line {
-  position: relative;
-  max-width: 100%;
-  min-width: 300px;
-} */
-
-/* .blackline {
-  display: inline-block;
-} */
 
 #one.slide-in-left {
 	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .2s both;
@@ -509,6 +498,15 @@ figure img {
     height: 100vh;
     left: 10%;
   }
+
+  .section2 {
+    padding: 100px;
+  }
+
+  * {
+    font-size: 12px;
+  }
+
   .name1 {
     position: absolute;
     top: 50%;
@@ -561,9 +559,16 @@ figure img {
 
 
 
-
-
 @media only screen and (max-width: 630px) {
+  * {
+    font-size: 10px;
+  }
+
+  .projectcontainer {
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  }
+
   .names {
     position: relative;
     /* top: 25%; */
@@ -572,6 +577,15 @@ figure img {
     left: 30%;
     transform: translate(-20%, 0);
   }
+
+  .embedcontainer {
+    padding-top: 100%;
+  }
+
+  .section2 {
+    padding: 50px;
+  }
+
   .name1 {
     position: absolute;
     top: 30%;
