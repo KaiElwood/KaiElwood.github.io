@@ -522,7 +522,7 @@ figure img {
   }
   .verticalNav {
     position: absolute;
-    top: 60vh;
+    top: 50vh;
     left:60vw;
   }
   ul li:nth-child(3){
