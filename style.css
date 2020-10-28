@@ -1,0 +1,52 @@
+html{
+    height: 100vh;
+}
+
+body{
+    background-color: #212227;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+}
+
+.navItem{
+    flex: 50%;
+    text-align: center;
+    font-size: .95rem;
+}
+
+.navItem > a{
+    text-decoration: none;
+    color: #BEC3CD;
+}
+
+/* @font-face {
+    font-family: Restora;
+    src: url(Restora.ttf);
+} */
+
+.intro {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    color: #BDD4E7;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #BEC3CD;
+    font-size: 1.2rem;
+}
+  
