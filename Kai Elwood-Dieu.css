@@ -57,6 +57,11 @@ p {
           animation-delay: .5s;
 }
 
+iframe {
+  width: 1px;
+  min-width: 100%;
+}
+
 @-webkit-keyframes flicker-in-1 {
   0% {
     opacity: 0;
